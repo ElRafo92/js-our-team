@@ -60,7 +60,7 @@ for(let i = 0; i < members.length; i++) {
         <li>
             <h4>${currentMember.nome}</h4>
             <p>Ruolo: ${currentMember.ruolo}</p>
-            <p>${currentMember.foto}</p>
+            <img src="img/${currentMember.foto}" alt="">
         </li>
     `;
 
