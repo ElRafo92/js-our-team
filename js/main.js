@@ -48,8 +48,25 @@ const members = [
 //MILESTONE 1:
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
-//MILESTONE 2:
-//Stampare le stesse informazioni su DOM sottoforma di stringhe
+for(let i = 0; i < members.length; i++) {
+    const currentMember = members[i];
+    console.log(currentMember.nome);
+    console.log(currentMember.ruolo);
+    console.log(currentMember.foto);
+    //MILESTONE 2:
+    //Stampare le stesse informazioni su DOM sottoforma di stringhe
+    const listItem =
+    `
+        <li>
+            <h4>${currentMember.nome}</h4>
+            <p>Ruolo: ${currentMember.ruolo}</p>
+            <p>${currentMember.foto}</p>
+        </li>
+    `;
+
+    document.getElementById('membri').innerHTML += listItem;
+};
+
 
 //BONUS 1:
 //Trasformare la stringa foto in una immagine effettiva
