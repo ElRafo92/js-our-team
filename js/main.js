@@ -58,8 +58,10 @@ for(let i = 0; i < members.length; i++) {
     const listItem =
     `
         <li>
-            <h4>${currentMember.nome}</h4>
+            <h2>${currentMember.nome}</h2>
             <p>Ruolo: ${currentMember.ruolo}</p>
+            <br>
+            <!----BONUS 1: Trasformare la stringa foto in una immagine effettiva---->
             <img src="img/${currentMember.foto}" alt="">
         </li>
     `;
@@ -68,8 +70,6 @@ for(let i = 0; i < members.length; i++) {
 };
 
 
-//BONUS 1:
-//Trasformare la stringa foto in una immagine effettiva
 
 //BONUS 2:
 //Organizzare i singoli membri in card/schede
