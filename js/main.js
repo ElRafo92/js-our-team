@@ -50,6 +50,10 @@ const members = [
 
 for(let i = 0; i < members.length; i++) {
     const currentMember = members[i];
+    console.log(currentMember);
+    /*for (let key in currentMember) {
+        console.log(currentMember[key])  POSSIAMO USARE ANCHE QUESTO PER STAMPARE SU CONSOLE
+    }*/
     console.log(currentMember.nome);
     console.log(currentMember.ruolo);
     console.log(currentMember.foto);
@@ -73,6 +77,7 @@ for(let i = 0; i < members.length; i++) {
 
 //BONUS 2:
 //Organizzare i singoli membri in card/schede
+
 
 /* Consigli del giorno:
 Ragioniamo come sempre a step.
